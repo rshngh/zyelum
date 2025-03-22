@@ -1,0 +1,12 @@
+export { default as agriculture } from "../assets/agriculture.webp";
+export { default as chemical } from "../assets/chemical.webp";
+export { default as steel } from "../assets/steel.webp";
+export { default as fashion } from "../assets/fashion.webp";
+export { default as polymer } from "../assets/polymer.webp";
+export { default as nonferrous } from "../assets/nonferrous.webp";
+export { default as petroleum } from "../assets/petroleum.webp";
+export { default as construction } from "../assets/construction.webp";
+export { default as carts } from "../assets/carts.png";
+export { default as lightbulb } from "../assets/lightbulb.png";
+export { default as lightning } from "../assets/lightning.png";
+export { default as wallet } from "../assets/wallet.png";
