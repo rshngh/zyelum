@@ -47,6 +47,10 @@ const SelectDropdown = () => {
       />
       <div className="mt-8">
         {selectedOption ? <h1>Coming Soon...</h1> : "Type to search city"}
+        <p className="text-xs opacity-50 mt-8">
+          *Due to inactivity servers may take upto 50 seconds to fetch city
+          data. Please be patient.
+        </p>
       </div>
     </div>
   );
