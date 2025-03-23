@@ -7,8 +7,8 @@ const SelectDropdown = () => {
 
   const baseurl =
     import.meta.env.MODE === "development"
-      ? "http://localhost:8080/api"
-      : `https://dynamic-search-backend.onrender.com/api`;
+      ? import.meta.env.LOCAL_HOST_URL
+      : import.meta.env.PRODUCTION_URL;
 
   const handleChange = (option) => {
     setSelectedOption(option);
@@ -22,7 +22,6 @@ const SelectDropdown = () => {
 
   const loadOptions = async (inputValue) => {
     const response = await fetch(`${baseurl}/cities/city?search=${inputValue}`);
-
     const data = await response.json();
     return data.map((city) => ({ label: city.name, value: city.name }));
   };
