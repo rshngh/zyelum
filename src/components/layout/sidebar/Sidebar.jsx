@@ -89,12 +89,12 @@ const Sidebar = () => {
           All Categories
         </label>
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side ">
         <label
           htmlFor="my-drawer"
           aria-label="close sidebar"
           className="drawer-overlay"></label>
-        <ul className="list bg-base-100 rounded-box shadow-md menu text-base-content min-h-full w-72 p-4">
+        <ul className="list rounded-box shadow-md menu text-base-content min-h-full w-72 p-4 bg-secondary">
           <li className="p-4 pb-2 text-xl opacity-60 tracking-wide text-nowrap">
             All Categories
           </li>

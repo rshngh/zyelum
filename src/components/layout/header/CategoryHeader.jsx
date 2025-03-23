@@ -51,7 +51,7 @@ const CategoryHeader = () => {
         <Sidebar />
       </div>
       {/* Category lis */}
-      <div className="overflow-x-auto ">
+      <div className="overflow-x-scroll overflow-y-hidden ">
         <ul className="flex  rounded-box">{categoryList}</ul>
       </div>
     </div>

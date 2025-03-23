@@ -143,8 +143,8 @@ const Navbar = () => {
           onClick={() => document.getElementById("my_modal_2").showModal()}>
           Login Now
         </button>
-        <dialog id="my_modal_2" className="modal">
-          <div className="modal-box text-center">
+        <dialog id="my_modal_2" className="modal ">
+          <div className="modal-box text-center bg-secondary rounded-2xl ">
             <h3 className="font-bold text-lg mb-4">Hello!</h3>
             <div className="mb-4">
               {/* login with email */}
