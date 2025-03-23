@@ -1,5 +1,5 @@
 import React from "react";
-import { carts, lightning, lightbulb, wallet } from "../../index.js";
+import { carts, lightning, lightbulb, wallet } from "../../../index.js";
 
 const Services = () => {
   const services = [
