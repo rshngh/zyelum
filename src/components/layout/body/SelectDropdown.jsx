@@ -10,15 +10,8 @@ const SelectDropdown = () => {
       ? "http://localhost:8080/api"
       : `https://dynamic-search-backend.onrender.com/api`;
 
-  var url = window.location.origin;
-  console.log("url", url);
-
-  console.log("baseurl", baseurl);
-  console.log("inputValue", inputValue);
-
   const handleChange = (option) => {
     setSelectedOption(option);
-    console.log(`Option selected:`, option);
   };
 
   const handleInputChange = (newValue) => {
@@ -31,7 +24,6 @@ const SelectDropdown = () => {
     const response = await fetch(`${baseurl}/cities/city?search=${inputValue}`);
 
     const data = await response.json();
-    console.log("data", data);
     return data.map((city) => ({ label: city.name, value: city.name }));
   };
 
